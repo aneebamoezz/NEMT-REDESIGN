@@ -30,6 +30,21 @@ span {
   font-size: 2em;
 }
 
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgba(107, 114, 128);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: rgba(4, 152, 213);
+}
+
+.nav-toggle {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   gap: 10px;
@@ -236,8 +251,14 @@ a {
     padding: 0px 16px;
   }
   .nav-list {
-    display: block !important;
+    display: none !important;
     text-align: left !important;
+  }
+
+  .nav-toggle {
+    float: right;
+    align-items: center;
+    display: block;
   }
 
   section{
